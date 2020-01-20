@@ -17,7 +17,8 @@ import { GetstartedComponent } from '../components/getstarted/getstarted.compone
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        // component: HomePage,
+        redirectTo: 'getstarted'
       },
       {
         path: 'details',
