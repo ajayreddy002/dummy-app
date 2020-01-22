@@ -8,6 +8,7 @@ import { HomePage } from './home.page';
 import { DetailsComponent } from '../components/details/details.component';
 import { SignupComponent } from '../components/signup/signup.component';
 import { GetstartedComponent } from '../components/getstarted/getstarted.component';
+import { RegisterComponent } from '../components/register/register.component';
 
 @NgModule({
   imports: [
@@ -32,13 +33,18 @@ import { GetstartedComponent } from '../components/getstarted/getstarted.compone
         path: 'getstarted',
         component: GetstartedComponent
       },
+      {
+        path: 'register',
+        component: RegisterComponent
+      },
     ])
   ],
   declarations: [
     HomePage,
     GetstartedComponent,
     SignupComponent,
-    DetailsComponent
+    DetailsComponent,
+    RegisterComponent
   ]
 })
 export class HomePageModule {}
