@@ -9,6 +9,7 @@ import { DetailsComponent } from '../components/details/details.component';
 import { SignupComponent } from '../components/signup/signup.component';
 import { GetstartedComponent } from '../components/getstarted/getstarted.component';
 import { RegisterComponent } from '../components/register/register.component';
+import { TakeloanComponent } from '../components/takeloan/takeloan.component';
 
 @NgModule({
   imports: [
@@ -37,6 +38,10 @@ import { RegisterComponent } from '../components/register/register.component';
         path: 'register',
         component: RegisterComponent
       },
+      {
+        path: 'takeloan',
+        component: TakeloanComponent
+      },
     ])
   ],
   declarations: [
@@ -44,7 +49,8 @@ import { RegisterComponent } from '../components/register/register.component';
     GetstartedComponent,
     SignupComponent,
     DetailsComponent,
-    RegisterComponent
+    RegisterComponent,
+    TakeloanComponent
   ]
 })
 export class HomePageModule {}

@@ -1,0 +1,79 @@
+.header {
+    padding-top: 25px;
+    // height: 100px;
+    --background: linear-gradient(90deg, #0194FE 0%, #0179CF 100%);
+
+    .arrow {
+        padding-left: 20px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .header_content {
+        padding-left: 25px;
+        margin-top: -10px;
+        padding-bottom: 15px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            margin-top: -3px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.tl_block {
+    --background: #FFFFFF;
+
+    .amount_block {
+        padding: 0 30px;
+
+        .loan {
+            h4 {
+                font-size: 14px;
+                line-height: 22px;
+                color: #565656;
+                font-weight: normal;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+
+        .amount_inc {
+            .minus, .add {
+                width: 37px;
+                height: 37px;
+                background: #DBDBDB;
+                border-radius: 8px;
+                text-align: center;
+                &:hover {
+                    background-color: #0194FE;
+                    ion-icon {
+                        color: #FFFFFF !important;
+                        z-index: 99;
+                    }
+                }
+                ion-icon {
+                    margin-top: 10px;
+                }
+            }
+            .amount_number {
+                margin-top: 10px;
+            }
+        }
+    }
+}
